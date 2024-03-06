@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Pipe computing app</title>
+<link rel="stylesheet" href="/storage/emulated/0/Download/python/stainless.css">
+
+</head>
+<body>
+
+  <div id="firstpart">
+    <label id="label1">Computing app for stainless</label>
+    <select id="channel" onchange="getvalue()">
+     <option value="kg">kg</option>
+     <option value="thickness">thickness</option>
+     <option value="width">width</option>
+     <option value="length">length</option>
+    </select>
+  </div><br>
+  
+  
+  <div Id="secondpart">
+    <label id="thickness">Thickness:</label>
+    <input type="number" Id="txtthickness"></input>
+    <select id="measurement1">
+     <option value="mm">mm</option>
+     <option value="cm">cm</option>
+     <option value="inch">inch</option>
+     <option value="m">m</option>
+      <option value="kg">kg</option>
+      
+    
+    </select>
+  </div><br>
+
+
+  <div Id="thirdpart">
+    <label id="width">Width:</label>
+    <input type="number" Id="txtwidth"></input>
+    <select id="measurement2">
+     <option value="mm">mm</option>
+     <option value="cm">cm</option>
+     <option value="inch">inch</option>
+     <option value="m">m</option>
+      <option value="ft">ft</option>
+    </select>
+  </div><br>
+
+  <div Id="fourthpart">
+    <label id="length">Length:</label>
+    <input type="number" Id="txtlength"></input>
+    <select id="measurement3">
+     <option value="mm">mm</option>
+     <option value="cm">cm</option>
+     <option value="inch">inch</option>
+     <option value="m">m</option>
+      <option value="ft">ft</option>
+    </select>
+  </div><br>
+
+<div id="fifthpart">
+ <label id="result"></label>
+ <select id="converter" onchange="getnumber()">
+     <option value="kg">kg</option>
+     <option value="mm">mm</option>
+     <option value="cm">cm</option>
+     <option value="inch">inch</option>
+     <option value="m">m</option>
+      <option value="ft">ft</option>
+    </select>
+</div><br>
+
+<div id="sixthpart">
+<button type="button" id="compute">Compute</button>
+</div>
+
+
+  <script src="/storage/emulated/0/Download/python/stainless.js"></script>
+</body>
+</html>
